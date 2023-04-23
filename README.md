@@ -10,20 +10,35 @@ A Cloned Version of Spotify By Liam
 - Host React Page with github
 **View to Implement**
 1. Dashboard View
-![Screenshot 2023-04-23 at 19.36.58.png](..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fls%2F5qslk7390k5cfskx8zcqxn100000gp%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_hAtjuu%2FScreenshot%202023-04-23%20at%2019.36.58.png)
+<img width="1270" alt="Screenshot 2023-04-23 at 19 56 06" src="https://user-images.githubusercontent.com/29332711/233841044-572fa420-885e-46e5-9faa-94d79c7d0273.png">
+
 2. Playlist View
-![Screenshot 2023-04-23 at 19.37.43.png](..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fls%2F5qslk7390k5cfskx8zcqxn100000gp%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_F5Te5H%2FScreenshot%202023-04-23%20at%2019.37.43.png)
+- Music
+<img width="1274" alt="image" src="https://user-images.githubusercontent.com/29332711/233841143-0e4ee043-a41d-4ece-9be1-708d91a74c42.png">
+
+
+- Podcast
+<img width="1273" alt="image" src="https://user-images.githubusercontent.com/29332711/233841105-d848c8a8-4b06-48e2-a887-67e3e2878779.png">
+
+
+<img width="1263" alt="Screenshot 2023-04-23 at 19 56 46" src="https://user-images.githubusercontent.com/29332711/233841079-e18f08b6-fbb1-43a2-b79e-9a5889a80f39.png">
+
 3. Search View
-![Screenshot 2023-04-23 at 19.38.20.png](..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fls%2F5qslk7390k5cfskx8zcqxn100000gp%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_03cayv%2FScreenshot%202023-04-23%20at%2019.38.20.png)
+<img width="1263" alt="Screenshot 2023-04-23 at 19 56 26" src="https://user-images.githubusercontent.com/29332711/233841061-740a3df7-f7d8-4d69-baa7-327245e05315.png">
+
 4. Premium View
-![Screenshot 2023-04-23 at 19.39.05.png](..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fls%2F5qslk7390k5cfskx8zcqxn100000gp%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_snt4D7%2FScreenshot%202023-04-23%20at%2019.39.05.png)
+<img width="1606" alt="image" src="https://user-images.githubusercontent.com/29332711/233841173-49d8e1c6-cc2c-4ad9-8fc5-c5655cda727c.png">
+
 5. Support View
-![Screenshot 2023-04-23 at 19.40.11.png](..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fls%2F5qslk7390k5cfskx8zcqxn100000gp%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_9dEdtq%2FScreenshot%202023-04-23%20at%2019.40.11.png)
+<img width="1591" alt="Screenshot 2023-04-23 at 20 06 01" src="https://user-images.githubusercontent.com/29332711/233841506-cd19bd00-96d6-4766-b76f-59051e6620ad.png">
+
 6. SignUp View
-![Screenshot 2023-04-23 at 19.40.40.png](..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fls%2F5qslk7390k5cfskx8zcqxn100000gp%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_E4djO8%2FScreenshot%202023-04-23%20at%2019.40.40.png)
+<img width="761" alt="image" src="https://user-images.githubusercontent.com/29332711/233841513-8500adf6-846e-4635-ada0-d8f9cf9ba7dc.png">
+
 7. Login View
-![Screenshot 2023-04-23 at 19.41.12.png](..%2F..%2F..%2F..%2F..%2Fvar%2Ffolders%2Fls%2F5qslk7390k5cfskx8zcqxn100000gp%2FT%2FTemporaryItems%2FNSIRD_screencaptureui_SAm5bQ%2FScreenshot%202023-04-23%20at%2019.41.12.png)
+<img width="1609" alt="Screenshot 2023-04-23 at 20 06 35" src="https://user-images.githubusercontent.com/29332711/233841534-cd5b8ff0-c9fc-4332-8fba-1a7f08501643.png">
 ### Used technology:
+
 - React with Typescript for the project
 - React Routing for the routing
 - Sass for Styling
