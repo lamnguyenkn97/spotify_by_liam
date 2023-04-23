@@ -37,7 +37,8 @@ A Cloned Version of Spotify By Liam
 
 7. Login View
 <img width="1609" alt="Screenshot 2023-04-23 at 20 06 35" src="https://user-images.githubusercontent.com/29332711/233841534-cd5b8ff0-c9fc-4332-8fba-1a7f08501643.png">
-### Used technology ###
+
+### Used technology
 
 - React with Typescript for the project
 - React Routing for the routing
