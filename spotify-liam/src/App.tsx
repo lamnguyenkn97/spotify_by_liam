@@ -1,11 +1,16 @@
 import React from 'react';
 import './App.scss';
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {Layout} from "./components/layout";
 
 function App() {
   return (
-    <div className="App">
-      <p>Welcome to Spotify by Lam</p>
-    </div>
+    <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+          </Route>
+        </Routes>
+    </BrowserRouter>
   );
 }
 
