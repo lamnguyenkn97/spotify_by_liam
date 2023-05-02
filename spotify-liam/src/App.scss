@@ -1,0 +1,63 @@
+@import './styles/variables';
+
+//Font face for spotify
+@font-face {
+  font-family: CircularStd-Black;
+  src: $circularBlackURL;
+}
+
+@font-face {
+  font-family: CircularStd-BlackItalic;
+  src: $circularBlackItalicURL;
+}
+
+@font-face {
+  font-family: CircularStd-Bold;
+  src: $circularBoldURL;
+}
+
+@font-face {
+  font-family: CircularStd-BoldItalic;
+  src: $circularBoldItalicURL;
+}
+
+@font-face {
+  font-family: CircularStd-Book;
+  src: $circularBookURL;
+}
+
+@font-face {
+  font-family: CircularStd-BookItalic;
+  src: $circularBookItalicURL;
+}
+
+@font-face {
+  font-family: CircularStd-Light;
+  src: $circularLightURL;
+}
+
+@font-face {
+  font-family: CircularStd-Light-Italic;
+  src: $circularLightItalicURL;
+}
+
+@font-face {
+  font-family: CircularStd-Medium;
+  src: $circularLightMediumURL;
+}
+
+@font-face {
+  font-family: CircularStd-MediumItalic;
+  src: $circularMediumItalicURL;
+}
+
+//Global Style
+ul {
+  list-style-type: none;
+}
+li {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
