@@ -41,8 +41,9 @@
 }
 
 
-@mixin base-flex-item {
-
+@mixin base-flex-item ($flexGrow: 1, $flexShrink: 1) {
+  flex-grow: $flexGrow;
+  flex-shrink: $flexShrink;
 }
 
 // Typo
