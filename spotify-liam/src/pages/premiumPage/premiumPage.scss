@@ -1,0 +1,50 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.premiumPage {
+  .limitedOffer {
+    background: linear-gradient(185deg, #a1248b 1.61%, #121212 39.73%, var(--background-base, #121212) 75.29%);
+    padding: 20px 200px 20px 200px;
+    .offer {
+      background-image: url("https://i.scdn.co/image/ab671c3d0000f43024fd968505540cdd20ca46b8");
+      background-repeat: no-repeat;
+      background-size: 250px;
+      background-position: right 8% center !important;
+      color: white;
+      @include base-flex($alignItems: space-between);
+      .offerTexts{
+        max-width: 560px;
+      }
+      p.title, h3 {
+        font-family: CircularStd-Light, sans-serif;
+      }
+      p.termCondition{
+        font-size: 11px;
+      }
+      h1 {
+        font-size: 40px;
+      }
+      span {
+        background-color: $white;
+        color: $black;
+        padding: 8px;
+        font-family: CircularStd-Medium, sans-serif;
+      }
+      .buttonGroup {
+        margin-top: 10px;
+        button {
+          @include base-button;
+          color: white;
+          margin: 15px 15px 15px 0;
+          &.threeMonths {
+            background: $pink;
+          }
+          &.allPlans {
+            background: none;
+            border: 2px white solid;
+          }
+        }
+      }
+    }
+  }
+}
