@@ -1,36 +1,50 @@
 @import '../../styles/mixins';
 @import '../../styles/colors';
 @import '../../styles/variables';
-.navBar {
+.header {
   background-color: $nearlyBlack;
-  height: 64px;
-  padding-right: 20px;
-  .navBarList{
-    @include base-flex($justifyContent: flex-end, $alignItems: center);
-    height: 100%;
-    .separator{
-      background: $white;
-      height: 25px;
-      width: 1px;
-      margin: 16px;
-    }
-    .loginButton{
-      @include base-button;
-      .loginText{
-        color: black;
-      }
-    }
-    li {
-      a {
-        color: $grey;
-        font-size: 1rem;
-        font-weight: 700;
-        letter-spacing: 1.76px;
-        line-height: 18px;
-      }
+  min-height: 80px;
+  padding: 8px;
+  .nav{
+    @include base-flex($justifyContent: space-between, $alignItems: middle);
+    width: 80%;
+    margin: 0 auto;
+    .branding {
       padding: 8px;
+      margin-left: 30px;
     }
-    margin: 0;
-  }
+    .navBar {
+      height: 64px;
+      padding-right: 20px;
+      .navBarList{
+        @include base-flex($justifyContent: flex-end, $alignItems: center);
+        height: 100%;
+        .separator{
+          background: $white;
+          height: 25px;
+          width: 1px;
+          margin: 16px;
+        }
+        .loginButton{
+          @include base-button;
+          .loginText{
+            color: black;
+          }
+        }
+        li {
+          a {
+            color: $grey;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 1.76px;
+            line-height: 18px;
+          }
+          padding: 8px;
+        }
+        margin: 0;
+      }
 
+    }
+  }
 }
+
