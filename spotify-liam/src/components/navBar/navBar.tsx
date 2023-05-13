@@ -2,6 +2,7 @@ import {Link} from "react-router-dom";
 import React from "react";
 import './navBar.scss';
 import spotifyLogo from '../../statics/logo/spotify-logo-white.png'
+import {Bar} from "../bar";
 export const NavBar: React.FC = () => {
     return (
         <header className='header'>
@@ -18,7 +19,7 @@ export const NavBar: React.FC = () => {
                         <li>
                             <Link to="/download">Download</Link>
                         </li>
-                        <div className='separator'></div>
+                        <Bar width={1} height={25} background={'white'} />
                         <li>
                             <Link to="/signup">Signup</Link>
                         </li>

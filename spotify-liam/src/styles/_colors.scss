@@ -1,6 +1,11 @@
 //Color for text, background, menu of Dashboard
-// White - Grey - Black
 
+//Gradient
+
+$limitedOfferGradientBackground: linear-gradient(185deg, #a1248b 1.61%, #121212 39.73%, #121212 75.29%);
+$differenceTableGradientTableBackground: linear-gradient(rgb(173, 36, 137), rgb(40, 70, 117));
+
+// White - Grey - Black
 $white: #ffffff;
 $grey: #A6A6A6 ;
 $darkerGrey: #737373;

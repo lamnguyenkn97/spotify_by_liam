@@ -1,0 +1,50 @@
+@import "../../../styles/colors";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+.limitedOffer {
+  background: $limitedOfferGradientBackground;
+  .offer {
+    background-image: $spotifyPremiumColor;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-position: right 8% center !important;
+    color: $white;
+    .offerTexts{
+      max-width: 560px;
+      @include base-flex($flexDirection: column, $justifyContent: space-evenly);
+      .offerEnd{
+        background: white;
+        color: black;
+        padding: 8px;
+        @include text-medium;
+        width: 200px;
+        text-align: center;
+
+      }
+      p.title, h3 {
+        @include text-light;
+      }
+      p.termCondition{
+        font-size: 11px;
+      }
+      h1 {
+        font-size: 40px;
+      }
+      .buttonGroup {
+        button {
+          @include base-button;
+          color: white;
+          margin: 15px 15px 15px 0;
+          &.threeMonths {
+            background: $pink;
+          }
+          &.allPlans {
+            background: none;
+            border: 2px white solid;
+          }
+        }
+      }
+    }
+
+  }
+}
