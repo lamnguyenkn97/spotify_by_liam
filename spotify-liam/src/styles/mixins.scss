@@ -50,3 +50,16 @@
 @mixin base-text {
 
 }
+
+@mixin text-black {
+  font-family: CircularStd-Black, sans-serif;
+}
+
+@mixin text-medium {
+  font-family: CircularStd-Medium, sans-serif;
+}
+
+@mixin text-light {
+  font-family: CircularStd-Light, sans-serif;
+}
+

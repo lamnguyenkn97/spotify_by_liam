@@ -1,0 +1,71 @@
+@import "../../../styles/colors";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+.difference{
+  background: $black;
+  color: $white;
+  .differenceFeature{
+    text-align: center;
+    h2{
+      font-size: 40px;
+    }
+    h3 {
+      @include text-medium;
+      font-size: 24px;
+      font-weight: 100;
+    }
+    table {
+      margin: 0 auto;
+      border-spacing: 0;
+      background: $differenceTableGradientTableBackground;
+      th, td {
+        border-bottom: 1px $white solid;
+        padding: 20px;
+        max-width: 200px;
+      }
+      th{
+        text-align: left;
+        &:nth-child(1){
+          vertical-align: bottom;
+          background-color: $black;
+        }
+        &:nth-child(3){
+          background-color: $pink;
+        }
+        &:nth-child(2){
+          color: $black;
+          background: $white;
+        }
+      }
+      td {
+        &:nth-child(1){
+          background: $black;
+          p{
+            @include text-light;
+            text-decoration: underline white dashed 1px;
+            text-underline-offset: 4px;
+            padding: 3px;
+          }
+        }
+        &:nth-child(2){
+          padding: 10%;
+          background: $black;
+          div{
+            background-color: $darkerGrey;
+            height: 3px;
+            width: 25px;
+            margin: 0 auto;
+          }
+        }
+        &:nth-child(3){
+          text-align: center;
+        }
+        i {
+          font-size: 30px;
+        }
+      }
+
+    }
+
+  }
+}

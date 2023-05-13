@@ -52,10 +52,24 @@
 }
 
 //Global Style
+
+*{
+  box-sizing: border-box;
+  font-family: CircularStd-Black, sans-serif;
+}
+
 ul {
   list-style-type: none;
 }
 
 a {
   text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  article {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
