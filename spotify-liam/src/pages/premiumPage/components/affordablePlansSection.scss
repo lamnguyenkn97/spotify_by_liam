@@ -1,0 +1,54 @@
+@import '../../../styles/mixins';
+@import '../../../styles/colors';
+
+@mixin logo-size {
+  width: 29px;
+  height: 20px;
+}
+
+.affordablePlansSection {
+  background: $black;
+  color: $white;
+  text-align: center;
+  .plans{
+    .affordablePlans{
+      .paymentMethods{
+        @include base-flex($flexDirection: row, $justifyContent: center);
+        margin: 0 auto;
+        width: 20%;
+        & > *{
+          margin-right: 10px;
+        }
+        .visa {
+          @include logo-size;
+          background-image: url("https://content-tooling.spotifycdn.com/images/c870a1e1-f980-4626-ab1b-14eeb8d4cab4_visa.svg");
+        }
+        .mastercard{
+          @include logo-size;
+          background-image: url("https://content-tooling.spotifycdn.com/images/e5ebed70-82ea-42ae-917d-b3edb7ed98ef_mastercard.svg");
+        }
+        .americanExpress{
+          @include logo-size;
+          background-image: url("https://content-tooling.spotifycdn.com/images/3fcc3442-3a00-455f-9256-d3115ac3e382_amex.svg");
+        }
+      }
+      .morePaymentMethods{
+        p{
+          text-decoration-line: underline;
+          text-underline-offset: 3px;
+
+        }
+
+      }
+      .plansList {
+        @include base-flex($justifyContent: center);
+        flex-wrap: wrap;
+        & > * {
+          margin: 10px;
+        }
+      }
+    }
+
+  }
+
+}
