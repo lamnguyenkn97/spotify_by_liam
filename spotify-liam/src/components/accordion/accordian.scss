@@ -1,0 +1,39 @@
+@import '../../styles/mixins';
+@import '../../styles/colors';
+
+@keyframes vertical-transform {
+  from {
+    height: 0;
+  }
+  to {
+   height: 150px;
+  }
+}
+.accordion{
+  .summary{
+    @include base-flex();
+    background: $darkerGrey3;
+    padding: 5px 5px;
+    h3{
+      padding: 0;
+      margin: 5px;
+    }
+
+    span{
+      padding: 0;
+      margin: auto 20px;
+    }
+  }
+  .detail {
+    p{
+      @include text-medium;
+    }
+    padding: 10px 20px;
+    text-align: left;
+    background: $darkerGrey4;
+    line-height: 40px;
+    animation-name: vertical-transform;
+    animation-duration: 0.5s;
+
+  }
+}
