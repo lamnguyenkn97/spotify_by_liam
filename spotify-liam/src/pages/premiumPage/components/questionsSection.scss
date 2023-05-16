@@ -1,0 +1,14 @@
+@import "../../../styles/colors";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+.questionsSection{
+  text-align: center;
+  background: $darkerGrey5;
+  color: $white;
+  .questions{
+    p{
+      @include text-medium;
+    }
+  }
+
+}
