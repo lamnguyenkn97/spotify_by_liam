@@ -1,0 +1,8 @@
+@import '../../../styles/mixins';
+@import '../../../styles/colors';
+.signUpForm {
+  margin: 10px 35%;
+  form {
+    @include base-flex($flexDirection: column, $justifyContent: space-evenly);
+  }
+}
