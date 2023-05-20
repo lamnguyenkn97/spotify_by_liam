@@ -13,10 +13,8 @@
   .summary{
     @include base-flex();
     background: $darkerGrey3;
-    padding: 5px 5px;
     h3{
       padding: 0;
-      margin: 5px;
     }
 
     span{

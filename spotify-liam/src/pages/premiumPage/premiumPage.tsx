@@ -1,6 +1,7 @@
 import './premiumPage.scss'
 import React from "react";
 import {LimitedOfferSection, DifferenceSection, AffordablePlansSection, QuestionsSection} from "./components";
+import {Footer} from "../../components/footer";
 
 
 export const PremiumPage: React.FC = () => {
@@ -10,6 +11,7 @@ export const PremiumPage: React.FC = () => {
             <DifferenceSection />
             <AffordablePlansSection />
             <QuestionsSection />
+            <Footer />
         </div>
     )
 }

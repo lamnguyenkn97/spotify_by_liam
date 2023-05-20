@@ -1,0 +1,51 @@
+@import '../../styles/mixins';
+@import '../../styles/colors';
+.verticalNav{
+  @include base-flex($flexDirection: column, $justifyContent: space-between);
+  background: $black;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  padding: 30px;
+  span{
+    margin-right: 10px;
+  }
+
+  a{
+    color: $grey;
+    @include text-medium;
+    margin-top: 15px;
+    &.active{
+      color: $white;
+    }
+  };
+  .mainNav{
+    @include base-flex($flexDirection: column);
+    margin-top: 20px;
+    font-size: 16px;
+
+  }
+  .secondaryNav{
+    @include base-flex($flexDirection: column);
+    margin-top: 20px;
+  }
+  .subLinks{
+    @include base-flex($flexDirection: row, $flexWrap: wrap, $justifyContent: space-around);
+    margin-bottom: 80px;
+    a{
+      color: $grey;
+      font-size: 12px;
+      @include text-light;
+
+    }
+    button {
+      @include base-button;
+      margin-top: 30px;
+      border: 2px $grey solid;
+      color: $white;
+      background: none;
+    }
+  }
+
+}

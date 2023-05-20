@@ -1,0 +1,53 @@
+@import '../../../styles/mixins';
+@import '../../../styles/colors';
+.searchSupport{
+  background: $black;
+  color: white;
+  .searchSupportDiv{
+    width: 40%;
+    margin: 0 auto;
+    .topTitle{
+      color: $darkerGrey;
+      @include text-medium
+    }
+    h1 {
+      font-size: 4.5rem;
+      padding: 0;
+      margin: 0;
+    }
+    h4 {
+      a{
+        color: white;
+        text-decoration-line: underline;
+      }
+      color: $darkerGrey;
+      font-size: 1.5rem;
+    }
+    .helpCards{
+
+      @include base-flex($flexDirection: row, $flexWrap: wrap);
+      div {
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+        border-radius: 10px;
+        padding-top: 15px;
+        padding-left: 20px;
+        overflow: hidden;
+
+      }
+      p {
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+        max-width: 100px;
+      }
+      img {
+        transform: translateX(130px) rotate(30deg);
+        object-fit: cover;
+      }
+
+    }
+  }
+
+}

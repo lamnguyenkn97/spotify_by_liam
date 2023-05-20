@@ -1,0 +1,17 @@
+@import "../../../styles/colors";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+.quickHelpSection{
+  background: $darkerGrey5;
+  color: $white;
+  .quickHelpArticle{
+    margin: 0 auto;
+    width: 20%;
+    text-align: center;
+    .title{
+      font-size: 24px;
+      @include text-medium;
+      text-align: left;
+    }
+  }
+}

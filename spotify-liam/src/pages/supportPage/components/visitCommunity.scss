@@ -1,0 +1,19 @@
+@import "../../../styles/colors";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+.visitCommunitySection{
+  background: $darkerGrey2;
+  color: $white;
+  .visitCommunityArticle{
+    text-align: center;
+    p{
+      @include text-medium;
+    }
+    button{
+      margin: 20px;
+      @include base-button;
+      background: $spotifyColor;
+    }
+  }
+}
