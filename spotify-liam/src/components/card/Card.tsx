@@ -5,13 +5,6 @@ import {PLANS} from '../../data'
 type CardProps = {
     planName: string,
 }
-type Plan = {
-    freeFor: string,
-    name: string,
-    features: string[],
-    color: string,
-    term: string
-}
 
 export const Card: React.FC<CardProps> = ({planName}: CardProps) => {
     // @ts-ignore

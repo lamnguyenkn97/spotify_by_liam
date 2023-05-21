@@ -1,0 +1,31 @@
+@import '../../../styles/mixins';
+@import '../../../styles/colors';
+.signUpForm {
+  margin: 10px 35%;
+  @include base-flex($flexDirection: column, $justifyContent: space-evenly, $alignItems: center);
+  form {
+    @include base-flex($flexDirection: column, $justifyContent: space-evenly);
+  }
+  .termCondition{
+    text-align: center;
+
+    p{
+      @include text-light();
+      font-size: 12px;
+    }
+
+  }
+  .buttonSignup{
+    @include base-button;
+    background-color: $spotifyColor;
+    width: 20%;
+  }
+  .login{
+    a{
+      color: $spotifyColor;
+      text-decoration-line: underline;
+      text-underline-offset: 3px;
+    }
+  }
+
+}
