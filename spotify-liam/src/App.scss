@@ -1,4 +1,5 @@
 @import './styles/variables';
+@import './styles/mixins';
 
 //Font face for spotify
 @font-face {
@@ -75,4 +76,19 @@ section {
       font-size: 40px;
     }
   }
+}
+
+label{
+  font-size: 0.875rem;
+  margin-bottom: 10px;
+  @include text-medium;
+}
+input {
+  @include text-medium;
+}
+input[type='text'], input[type='password'], select{
+  height: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%;
 }

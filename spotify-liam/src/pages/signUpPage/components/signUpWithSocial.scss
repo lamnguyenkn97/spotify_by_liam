@@ -1,0 +1,31 @@
+@import '../../../styles/mixins';
+@import '../../../styles/colors';
+.socialSignUp{
+  @include base-flex($flexDirection: column, $alignItems: center);
+  h1 {
+    margin: 0 0 30px 0;
+  }
+  img{
+    width: 20%;
+    height: auto;
+  }
+  a{
+    text-align: center;
+  }
+  button{
+    @include base-button;
+    margin-bottom: 30px;
+    i {
+      margin-right: 10px;
+    }
+    &.faceSignup {
+      background-color: $facebookColor2;
+      color: $white;
+    }
+    &.googleSignup {
+      background-color: $white;
+      color: $black;
+      border: 1px solid $black;
+    }
+  }
+}

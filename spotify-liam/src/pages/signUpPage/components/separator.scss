@@ -1,0 +1,9 @@
+@import '../../../styles/mixins';
+@import '../../../styles/colors';
+.separatorDiv{
+  @include base-flex($justifyContent: center);
+  .separator {
+    @include base-flex();
+    color: #737373;
+  }
+}

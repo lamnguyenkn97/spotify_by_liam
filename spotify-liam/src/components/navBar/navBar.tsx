@@ -1,7 +1,6 @@
 import {Link} from "react-router-dom";
 import React from "react";
 import './navBar.scss';
-import spotifyLogo from '../../statics/logo/spotify-logo-white.png'
 import {Bar} from "../bar";
 export const NavBar: React.FC = () => {
     return (

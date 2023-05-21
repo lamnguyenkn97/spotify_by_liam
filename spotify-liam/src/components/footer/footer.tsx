@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
         <footer className='footer'>
             <nav className='footerNav'>
                 <div className='logoColumn'>
-                    <img src={spotifyLogo}/>
+                    <img src={spotifyLogo} alt='spotifyLogo'/>
                 </div>
                 <div className='infoColumn'>
                     <nav className='infoNav'>

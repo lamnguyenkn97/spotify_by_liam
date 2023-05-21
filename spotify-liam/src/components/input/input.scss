@@ -2,27 +2,34 @@
 @import '../../styles/colors';
 @import '../../styles/variables';
 
-.textInput, .datetimeInput {
+div.label {
+  margin-bottom: 10px;
+}
+.textInput, .datetimeInput,.selectInput, .radioInput, .checkBoxInput {
   @include base-flex($flexDirection: column, $justifyContent: space-between);
   margin: 10px;
+}
+.datetimeInputGroup{
   label{
-    font-size: 0.875rem;
-    margin-bottom: 10px;
+    display: block;
   }
-  input{
-    height: 50px;
-    padding: 5px;
-    @include text-medium;
-    border-radius: 5px;
-  }
-  .datetimeInputGroup{
-    label{
-      display: block;
-    }
-    input{
-      width: 100%;
-    }
+  @include base-flex($justifyContent: space-between);
+}
+.radioInput {
+  .radioInputGroup{
     @include base-flex($justifyContent: space-between);
+    .radioItem{
+      input{
+        margin-left: 10px;
+      }
+    }
   }
 
+
+}
+.checkBoxInput {
+  margin-top: 30px;
+  input{
+    margin-right: 10px;
+  }
 }

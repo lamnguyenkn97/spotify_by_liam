@@ -1,24 +1,33 @@
 import './input.scss'
-
+import moment from 'moment'
+import {SelectionInput} from "./selectionInput";
 
 export const DateTimeInput= ({label}: {label: string})  => {
+    const monthOptions = moment.months().map(m => {
+        return {
+            label: m,
+            value: m
+        }
+    })
+
     return(
         <div className='datetimeInput'>
-            <label>{label}</label>
+            <div className={'label'}>{label}</div>
             <div className='datetimeInputGroup'>
                 <div className='monthInput'>
-                    <label className={'label'} htmlFor={label}>Month</label>
-                    <input width={30} id={label} type='month'/>
+                    <SelectionInput label={'Month'} options={monthOptions}/>
                 </div>
                 <div className='dateInput'>
                     <label className={'label'} htmlFor={label}>Date</label>
-                    <input width={30} id={label} type='number' min={1} max={31}/>
+                    <input id='date' inputMode='numeric' aria-invalid={true} maxLength={2} name='date' type='text'
+                    pattern={"((0?[1-9])|([12][0-9])|(3[01]))"} placeholder='DD'/>
+
                 </div>
                 <div className='yearInput'>
                     <label className={'label'} htmlFor={label}>Year</label>
-                    <input width={30} id={label} type='year'/>
+                    <input id='year' inputMode='numeric' aria-invalid={true} maxLength={2} name='year' type='text'
+                           pattern={"(19[0-9]{2})|([200][0-9])|(201[0-0])"} placeholder='YYYY'/>
                 </div>
-
             </div>
 
         </div>
