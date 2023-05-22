@@ -5,7 +5,7 @@ A Cloned Version of Spotify By Liam
 
 ### Phase I
 **Scope**
-- Implement UI view of those view with React, Bootstrap, SCSS, Typescript
+- Implement UI view of those view with React, SCSS, Typescript
 - Data from backend will be mocked 
 - Host React Page with github
 **View to Implement**
