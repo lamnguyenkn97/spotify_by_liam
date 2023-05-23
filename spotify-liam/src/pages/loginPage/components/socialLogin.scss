@@ -1,0 +1,18 @@
+@import '../../../styles/mixins';
+@import '../../../styles/colors';
+.loginSocialDiv{
+  @include base-flex($flexDirection: column, $alignItems: center);
+  width: 50%;
+  margin: 0 auto;
+  button {
+    @include base-button;
+    width: 300px;
+    margin: 20px;
+    border: 1px solid $white;
+    background: none;
+    color: white;
+    i {
+      margin-right: 10px;
+    }
+  }
+}
