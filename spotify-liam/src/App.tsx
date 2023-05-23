@@ -6,6 +6,7 @@ import {PremiumPage} from "./pages/premiumPage";
 import {SupportPage} from "./pages/supportPage";
 import {HomePage} from "./pages/homePage";
 import {SignUpPage} from "./pages/signUpPage";
+import {LoginPage} from "./pages/loginPage/loginPage";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
               <Route path='/premium' element = {<PremiumPage />}/>
               <Route path='/support' element = {<SupportPage />}/>
               <Route path='/signup' element = {<SignUpPage />}/>
+              <Route path='/login' element = {<LoginPage />}/>
           </Route>
         </Routes>
     </BrowserRouter>

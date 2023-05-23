@@ -1,0 +1,18 @@
+@import '../../styles/colors';
+@import '../../styles/mixins';
+.loginPage{
+  background: $darkerGrey4;
+  padding-top: 100px;
+  .loginPageCenter {
+    background-color: $black;
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
+    @include base-flex($flexDirection: column, $alignItems: center);
+    h1{
+      color: $white;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
