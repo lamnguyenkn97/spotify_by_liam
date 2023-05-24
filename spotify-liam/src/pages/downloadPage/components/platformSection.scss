@@ -1,0 +1,37 @@
+@import '../../../styles/mixins';
+@import '../../../styles/colors';
+.platformSection{
+  text-align: center;
+  background: $darkerGrey3;
+  padding: 50px;
+  color: white;
+
+  ul {
+    @include base-flex($justifyContent: space-around);
+    width: 50%;
+    margin: 0 auto;
+    li{
+      position: relative;
+      &::before{
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: $spotifyColor;
+        position: absolute;
+        border-radius: 50%;
+        left: -20px;
+        top: 5px;
+
+      }
+      &:first-child::before{
+        content: "";
+        width: 0;
+        height: 0;
+      }
+      &:nth-last-child(-n+4){
+        color: $spotifyColor;
+        text-decoration: underline $spotifyColor 1px;
+      }
+    }
+  }
+}

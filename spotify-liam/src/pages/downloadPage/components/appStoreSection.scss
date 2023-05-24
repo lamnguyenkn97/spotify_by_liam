@@ -1,0 +1,19 @@
+@import '../../../styles/mixins';
+@import '../../../styles/colors';
+.appStoreSection {
+  text-align: center;
+  padding: 50px;
+  h1{
+    font-size: 32px;
+  }
+  p{
+    @include text-medium;
+    margin:30px;
+  }
+  .storeList{
+    img{
+      width: 120px;
+      height: 40px;
+    }
+  }
+}

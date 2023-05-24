@@ -1,0 +1,39 @@
+@import '../../../styles/mixins';
+@import '../../../styles/colors';
+.downloadAppSection{
+  background-color: rgb(25, 230, 140);
+  text-align: center;
+  .imageDown{
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+    img:first-child{
+      width: 136px;
+      height: auto;
+    }
+    .circle{
+      position: absolute;
+      left: 47%;
+      top: 14px;
+    }
+    .check{
+      position: absolute;
+      left: 49%;
+      top: 33.5px;
+    }
+  }
+  h1, p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  h1{
+    font-size: 32px;
+  }
+  p{
+    @include text-medium;
+    font-size: 16px;
+  }
+  button{
+    @include base-button;
+  }
+}
