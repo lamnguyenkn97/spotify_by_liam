@@ -1,8 +1,8 @@
 import React from "react";
 
 type BarProps = {
-    width: number,
-    height: number,
+    width: number | string,
+    height: number | string,
     background: string,
     margin?: number
 }

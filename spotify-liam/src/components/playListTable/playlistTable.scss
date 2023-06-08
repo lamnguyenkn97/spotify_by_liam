@@ -1,0 +1,39 @@
+@import '../../styles/mixins';
+@import '../../styles/colors';
+@import '../../styles/variables';
+.playlistTable{
+  color: $grey;
+  width: 80%;
+  margin: 0 20px 0 0;
+  td, th{
+    width: 30%;
+    padding: 10px;
+    @include text-medium;
+    font-size: 12px;
+  }
+  th{
+    text-align: left;
+  }
+  tr {
+    @include base-flex($justifyContent: space-between, $alignItems: center);
+    width: 100%;
+    .songTitles{
+      @include base-flex($alignItems: center);
+      & > *{
+        margin-right: 10px;
+      }
+      .number{
+        margin-right: 15px;
+      }
+      div {
+        p{
+          @include text-medium;
+          margin: 5px;
+        }
+        p:first-child{
+          color: $white;
+        }
+      }
+    }
+  }
+}

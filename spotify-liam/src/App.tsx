@@ -8,6 +8,7 @@ import {HomePage} from "./pages/homePage";
 import {SignUpPage} from "./pages/signUpPage";
 import {LoginPage} from "./pages/loginPage";
 import {DownloadPage} from "./pages/downloadPage";
+import {Playlist} from "./components/playlist";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Route path='/signup' element = {<SignUpPage />}/>
               <Route path='/login' element = {<LoginPage />}/>
               <Route path='/download' element = {<DownloadPage />}/>
+              <Route path='/playlist' element = {<Playlist />}/>
           </Route>
         </Routes>
     </BrowserRouter>
