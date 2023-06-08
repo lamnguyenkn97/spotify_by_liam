@@ -1,0 +1,33 @@
+@import '../../styles/mixins';
+@import '../../styles/colors';
+@import '../../styles/variables';
+.playlist{
+  margin-left: 200px;
+  background-color: $black;
+  .actionButton{
+    @include base-flex($alignItems: center);
+    margin-left: 30px;
+    div:first-child{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: $spotifyColor;
+      font-size: 20px;
+      margin-right: 20px;
+      @include base-flex($justifyContent: center, $alignItems: center);
+    }
+    div:nth-last-child(-n+2){
+      width: 60px;
+      height: 60px;
+      font-size: 30px;
+      @include base-flex($justifyContent: center, $alignItems: center);
+      color: $white;
+    }
+  }
+  .playlistBody{
+    margin: 0;
+    background: linear-gradient(#546371, #000000);
+
+  }
+
+}

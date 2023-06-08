@@ -21,33 +21,6 @@
       }
 
     }
-    .infoColumn {
-      @include base-flex-item($flexGrow: 3);
-      nav.infoNav{
-        @include base-flex($justifyContent: space-between);
-      }
-      dl {
-        margin: 0;
-      }
-      dd, dt {
-        margin: 0;
-        height: 42px;
-        font-weight: 900;
-        line-height: 1.4;
-      }
-      dt {
-        text-transform: uppercase;
-        color: $darkerGrey;
-        font-size: 12px;
-        letter-spacing: .08em;
-      }
-      dd {
-        a{
-          color: $white;
-          font-size: 16px;
-        }
-      }
-    }
     .mediaColumn {
       @include base-flex-item($flexGrow: 2);
       @include base-flex($justifyContent: flex-end);
