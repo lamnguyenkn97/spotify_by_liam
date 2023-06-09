@@ -1,10 +1,16 @@
 import {Link} from "react-router-dom";
 import React from "react";
 import './footerInfo.scss'
-
-export const FooterInfo = () => {
+type Props = {
+    width?: string | number,
+    theme?: 'Light' | 'Dark'
+}
+export const FooterInfo = ({width='100%', theme='Dark'}: Props) => {
+    const style = {
+        width,
+    }
     return(
-        <div className='infoColumn'>
+        <div className='infoColumn' style={style}>
             <nav className='infoNav'>
                 <div className='company'>
                     <dl>

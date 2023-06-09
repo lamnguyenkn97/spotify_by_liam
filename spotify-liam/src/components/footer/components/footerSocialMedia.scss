@@ -1,0 +1,11 @@
+@import '../../../styles/colors';
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+.mediaColumn {
+  @include base-flex-item($flexGrow: 2);
+  @include base-flex($justifyContent: flex-end);
+  a {
+    margin: 15px;
+  }
+}

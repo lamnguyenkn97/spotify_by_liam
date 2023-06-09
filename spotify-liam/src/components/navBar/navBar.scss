@@ -7,7 +7,11 @@
   padding: 8px;
   margin-bottom: 0;
   .nav{
-    @include base-flex($justifyContent: flex-end, $alignItems: middle);
+    @include base-flex($justifyContent: space-between, $alignItems: middle);
+    .branding {
+      margin-left: 20%;
+      @include base-flex($alignItems: center);
+    }
     .navBar {
       height: 64px;
       padding-right: 20px;
