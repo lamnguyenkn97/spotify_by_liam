@@ -1,11 +1,14 @@
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import React from "react";
 import './navBar.scss';
 import {Bar} from "../bar";
+import spotifyLogo from "../../statics/logo/spotify-logo-white.png";
 export const NavBar: React.FC = () => {
+
     return (
         <header className='header'>
             <div className='nav'>
+                <Link className='branding' to='/'><img src={spotifyLogo} alt='Spotify Log' width={132} height={40}/></Link>
                 <nav className='navBar'>
                     <ul className='navBarList'>
                         <li>

@@ -1,12 +1,10 @@
 import React from 'react'
 import './playlists.scss'
 import playlistsData from '../../../data/processedPlaylist.json'
-
 import {ImageCard} from "../../../components/imageCard";
-import {Link, Route} from "react-router-dom";
-import {Playlist} from "../../../components/playlist";
-import {Footer} from "../../../components/footer";
-import {FooterInfo} from "../../../components/footer/components/footerInfo";
+import {Link} from "react-router-dom";
+import {FooterInfo, FooterSocialMedia} from "../../../components/footer/components";
+import {CopyRight} from "../../../components/copyRight";
 
 
 export const Playlists = () => {
@@ -28,10 +26,10 @@ export const Playlists = () => {
                 )
             })}
             <div className='footerHomepage'>
-                <FooterInfo />
-                
+                <FooterInfo width={'100px'}/>
+                <FooterSocialMedia />
             </div>
-
+            <CopyRight width={'100%'} height={0.5} background={'#a7a7a7'} text={'© 2023 Spotify AB'}/>
         </div>
     )
 }

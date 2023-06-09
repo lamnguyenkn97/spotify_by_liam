@@ -7,11 +7,14 @@
   width: 100%;
   color: white;
   .footerNav{
-    @include base-flex($flexWrap: wrap, $alignItems: normal);
+    @include base-flex($justifyContent: space-evenly);
     margin: 0 auto;
     width: 70%;
     & {
       height: 300px;
+    }
+    & > *{
+      margin-right: 50px;
     }
     .logoColumn {
       @include base-flex-item($flexGrow: 1);
@@ -20,13 +23,6 @@
         height: 41.89px;
       }
 
-    }
-    .mediaColumn {
-      @include base-flex-item($flexGrow: 2);
-      @include base-flex($justifyContent: flex-end);
-      a {
-        margin: 15px;
-      }
     }
   }
 }
