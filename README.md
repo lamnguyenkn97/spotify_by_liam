@@ -43,7 +43,9 @@ A Cloned Version of Spotify By Liam
 - React with Typescript for the project
 - React Routing for the routing
 - Sass for Styling
-**Phase II**
+
+
+### Phase II
 - Add Logic for each Page
 - Add State for each Page
 - Add effect for each Page
